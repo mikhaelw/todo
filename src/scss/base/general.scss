@@ -1,0 +1,71 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box
+}
+
+body {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: #F6F8FC;
+    scroll-behavior: smooth;
+    text-rendering: optimizeSpeed;
+}
+
+// font
+body {
+    color: $colorText;
+    font-family: Monda, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+main {
+    flex: 1
+}
+
+h1,h2,h3,h4,h5,h6,ul,ol,p {
+    margin: 0;
+    padding: 0;
+    list-style: none
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    transition: all .5s ease;
+}
+
+a:not([class]) {
+    text-decoration-skip-ink: auto
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    color: transparent;
+    image-rendering: auto;
+}
+
+article>*+* {
+    margin-top: 1em
+}
+
+input,
+button,
+textarea,
+select {
+    margin: 0;
+    box-sizing: border-box;
+    font: inherit;
+}
+
+.container {
+    width: 100%;
+    max-width: 640px;
+    margin: 0 auto;
+    padding-left: 1em;
+    padding-right: 1em;
+}

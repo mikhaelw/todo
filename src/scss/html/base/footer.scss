@@ -1,0 +1,25 @@
+.footer {
+    .container {
+        background-color: $colorPrimary;
+    }
+    
+    .menu {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        align-items: center;
+        height: 100px;
+        background-color: transparent;
+        box-shadow: none;
+
+        a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            svg {
+                width: 24px;
+                height: 24px;
+            }
+        }
+    }
+}
