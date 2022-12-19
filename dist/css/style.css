@@ -542,6 +542,10 @@ select {
   height: 24px;
 }
 
+.form {
+  padding: 40px 0;
+}
+
 .form .form__input {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -628,6 +632,11 @@ select {
   color: #3E3B3B;
 }
 
+.form .form__button {
+  display: block;
+  margin-bottom: 60px;
+}
+
 .form .form__button button {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -647,6 +656,92 @@ select {
           box-shadow: 0px 4px 4px #ACD4E1;
   border-radius: 25px;
   border: none;
+}
+
+.form .form__select {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 30px;
+  padding-bottom: 10px;
+}
+
+.form .form__select:last-child {
+  margin-bottom: 0;
+}
+
+.form .form__select .check {
+  position: absolute;
+  top: 10px;
+  left: 0;
+}
+
+.form .form__select .check svg {
+  width: 20px;
+  height: 20px;
+}
+
+.form .form__select input {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px 40px;
+  border: none;
+  border-bottom: 2px solid #3E3B3B;
+  background-color: transparent;
+  outline: none;
+  -webkit-box-shadow: 0px 3px 0px #C8E3EC;
+          box-shadow: 0px 3px 0px #C8E3EC;
+}
+
+.form .form__select input::-webkit-input-placeholder {
+  color: #3E3B3B;
+}
+
+.form .form__select input::-moz-placeholder {
+  color: #3E3B3B;
+}
+
+.form .form__select input:-ms-input-placeholder {
+  color: #3E3B3B;
+}
+
+.form .form__select input::-ms-input-placeholder {
+  color: #3E3B3B;
+}
+
+.form .form__select input::placeholder {
+  color: #3E3B3B;
+}
+
+.form .form__select .btns {
+  position: absolute;
+  top: 10px;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 15px;
+}
+
+.form .form__select .btns svg {
+  width: 20px;
+  height: 20px;
+}
+
+.form .form__select .desc {
+  color: #3E3B3B;
+  font-size: 14px;
 }
 
 .webp .header { background: url(../img/group1.webp) no-repeat center/container; }
